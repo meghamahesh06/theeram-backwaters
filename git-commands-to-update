@@ -1,0 +1,8 @@
+# 1. Stage all your new changes
+git add .
+
+# 2. Save your changes locally with a descriptive message
+git commit -m "Fix bugs and update code functionality"
+
+# 3. Upload the new changes to your remote repository
+git push

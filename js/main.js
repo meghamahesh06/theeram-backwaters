@@ -48,7 +48,7 @@ document.addEventListener('keydown', function(e){
 });
 
   /* ============ ACTIVE NAV LINK ON SCROLL ============ */
-  var sections = ['retreat','spaces','moments','rates','visit'].map(function(id){
+  var sections = ['retreat','spaces','moments','visit'].map(function(id){
     return document.getElementById(id);
   }).filter(Boolean);
   var navLinks = document.querySelectorAll('[data-nav]');
@@ -134,7 +134,6 @@ document.addEventListener('keydown', function(e){
   var selectorItems = document.querySelectorAll('.selector-item');
   var selectorImg = document.getElementById('selectorImg');
   var selectorCapName = document.getElementById('selectorCapName');
-  var selectorCapPrice = document.getElementById('selectorCapPrice');
   var selectorCta = document.getElementById('selectorCta');
   var shorelineFill = document.getElementById('shorelineFill');
   var preloadedImgs = {};
@@ -165,7 +164,6 @@ document.addEventListener('keydown', function(e){
     }, reduceMotion ? 0 : 220);
 
     selectorCapName.innerHTML = data.name;
-    selectorCapPrice.innerHTML = data.price + ' <em>+ GST</em>';
     selectorCta.setAttribute('href', data.target);
     selectorCta.innerHTML = 'View ' + data.name + ' <span aria-hidden="true">\u2192</span>';
 
